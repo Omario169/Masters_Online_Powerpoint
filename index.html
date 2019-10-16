@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Understanding perceptual stability – With Virtual Reality (VR)</title>
+
+		<meta name="description" content="An online powerpoint to showcase my masters project.">
+		<meta name="author" content="Omar Faruk">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Linking the CSS -->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/moon.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+	
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+		
+			<div class="slides">
+				<section>
+					<h1>Measuring perceptual stability</h1>
+					<h3>With vritual reality (VR)</h3>
+					<p>
+						<small>A project by Omar Faruk</small>
+					</p>
+				</section>
+
+				<section>
+					<h2>What are we trying to find?</h2><br>
+					<p>
+						As we move around an object we percieve it as stationairy. But why not as rotating? How do we process the properties of objects accurately? <br>
+
+						<br> <img src="images/pic02.jpg" alt="People and objects">
+					</p>
+				</section>
+
+			
+				<section>
+					<section>
+						<h2>Past research</h2>
+						<p>Past research has shown that we percieve objects with a "bias" so they move a little with us to be percieved as stable.</p>
+						<p>Press <em>down</em> to find out more about  key studies!</p>
+						<br>
+						<a href="#" class="navigate-down">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section>
+						<h2><a target="_blank" href="https://www.sciencedirect.com/science/article/pii/S0042698905001057/">Tcheang et al. (2005)</a></h2>
+					
+						<ul id="two">
+							<li>In this study participants moved sideways whilst observing a rotating ball.</li><br>
+							<li>The participant was asked if the ball moved 
+								"with" them (in the same direction as them) or "against" them in the opposite direction.</li><br>
+							<li>The ball rotated at different "gains" which means 
+								the amount of rotation changed in response to the participant's movements. See A for more details! </li>
+						</ul>
+						<a href="#" class="navigate-down">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section>
+						<h2>How they retrieved data...</h2>
+						<p>The "bias" is the difference between when the object was stationairy and when the participant viewed the object as stationairy.
+							They found a bias as large as +0.45! Press down for more.
+			
+						</p>
+						
+						<img src="images/pic03.jpg" alt="rotational movement demo image" style="width:50%">
+					
+						
+					</section>
+					<section>
+						<h2>Other movements - <a target="_blank" href="https://journals.sagepub.com/doi/pdf/10.1111/1467-9280.14491">Wexler (2003)</a></h2>
+						<p>In this study the ball did not rotate, but moved forwards and backwards axially. The concept was similar to the previous study, however the "gain" parameter changed in response to the participants forward and backward movements.
+							See the figure B. Press down for more details on Wexler's study...
+			
+						</p>
+						
+						<img id = "axial" src="images/pic044.jpg" alt="axial movement demo image" width="300" height="300">
+					
+						
+					</section>
+					<section>
+							<h2>Other movements - Wexler (2003)</h2>
+
+							
+							<ul id ="two">
+								<li>In this study a bias as large as +0.38 was found.</li><br>
+								<li>A larger bias of +0.57 when the participant's movement was involuntary. This can be seen in figure C.</li><br>
+								<li>This demonstrated that voluntary movement reduced "bias." To find out more about why we investigated voluntary and involuntary movement click <em>down!</em></li>
+
+							</ul>
+							
+							<img src="images/pic05.jpg" alt="Bias Wexler figures" width="400" height="300">
+						
+							
+						</section>
+						<section>
+							<h2>Wexler (2003) - Continued...</h2>
+							
+							<ul id="one">
+								<li>In Wexler's study participants in the involuntary condition were moved on a office chair.</li><br>
+								<li>This removed their sense of afference and proprioception.</li><br>
+								<li>This increased both the "bias" and also the "sigma".</li><br>
+								<li>"Sigma" is how sensitive participants were to the ball stimuli.</li><br>
+								<li>A higher "sigma" value indicates less sensitivity to the stimuli. Wexler's "sigma" values are displayed in figure D.</li>
+
+							</ul>
+							
+							<img src="images/pic06.jpg" alt="Sigma Wexler figures">
+						
+						
+							
+						</section>
+				</section>
+
+				<section>
+					<h2>What is my study trying to accomplish?</h2>
+					<ul id="one">
+						<li>Replicate both Tcheang and Wexler's studies.</li>
+						<li>Their methodology is outdated and uses primitive tech. We will use an immersive VR environment to update the original experiments.</li>
+						<li>Sample size is an issue. Tcheang had 5 participants whilst Wexler had 11. This raises questions as to the validaty of their study.</li>
+					</ul>
+					<br>
+					<br>
+					<br>
+					<ul id="one">
+						<li>To expand the Tcheang's experiment by providing a involuntary condition similar to that of Wexler's experiment.</li>
+						<li>This will allow us to see if changes in "bias" and "sigma" are consistent with different movement condition.</li>
+					</ul>
+					<br>
+					<br>
+					<ul id="one">
+						<li>To investigate if there is a relationship in "bias" between the different movement types.</li>
+						<li>If a relationship is found it will prove the existence of a common stability mechanism for different movement types.</li>
+					</ul>
+				</section>
+			
+				
+
+				<section>
+					<section>
+						<h2>How was it achieved?</h2>
+					<ul id="one">
+						<li>Participant's view a 3D ball in a virtual scene.</li><br>
+						<li>Participant's then complete Tcheang and Wexler's original experiment..</li><br>
+						<li>Participant's will record their "with" and "against" responses with a controller.</li><br>
+						<li>Lastly, participant's complete both experiments in the involuntary movement condition. Press down to see how! 
+						</li>
+					</ul>
+						  <img src="images/pic08.jpg" alt="VR_guy and movement demos" style="width:100%">
+
+					</section>
+
+					<section>
+						<h2>The involuntary condition</h2>
+						<ul id="one">
+							<li>To achieve this participant's will sit on a specialised office chair with the VR helmet on and perform 
+								the task with the experimentor moving them. 
+							</li><br>
+							<li>The chair was on a rails system and could be adjusted to move forwards/backwards or side to side.</li>
+						</ul>
+							  <img src="images/pic11.jpg" alt="Involuntary_chair" style="width:100%">
+	
+					</section>
+					
+				</section>
+			
+				<section>
+					<h2>We managed to recruit 16 participants</h2>
+					<ul id="one">
+						<li>Posters were placed throughout the UoM's campus.</li><br>
+						<li>Yes that is me, I do modelling too ;)</li><br>
+						
+					</ul>
+
+					<div class="row">
+						<div class="column">
+						  <img src="images/pic09.jpg" alt="Me" style="width:60%">
+						</div>
+				
+				</section>
+
+			    <section>
+					<h2>How will we do the analysis of the data?</h2>
+					<ul id="one">
+						<li>The programming language "R" will be used for data analysis.</li><br>
+						<li>To check for consistent replication of past studies a one-sample t-test will be used.</li><br>
+						<li>A within-subjects ANOVA will be used to compare any differences between the voluntary/involuntary movement condition <em>AND</em> the 
+						ball rotation/axial movement conditions.</li><br>
+						<li>A Pearson's correlation will be made between the different movement conditions to see if there is a common stability mechanism between the different
+							movement types.
+						</li><br>
+						
+					</ul>
+
+					<div class="row">
+						<div class="column">
+						  <img src="images/pic10.jpg" alt="Me" style="width:30%">
+						</div>
+						
+				</section>
+
+				<section>
+					<section>
+						<h2>And the results are in!</h2>
+						<a href="#" class="navigate-down">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+				
+					</section>
+
+					<section>
+						<h2>The results</h2>
+						<table>
+							<thead>
+								<tr>
+									<th>Participant movement + Ball movement type</th>
+									<th>Mean Bias</th>
+									<th>Mean Sigma</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Voluntary + rotation</td>
+									<td>0.17</td>
+									<td>0.26</td>
+								</tr>
+								<tr>
+									<td>Voluntary + axial</td>
+									<td>0.15</td>
+									<td>0.25</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Involuntary  + rotational </td>
+									<td>0.26</td>
+									<td>0.38</td>
+								</tr>
+								<tr>
+									<td>Involuntary + axial </td>
+									<td>0.26</td>
+									<td>0.38</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					
+				</section>
+
+				<section>
+					<section>
+						<h3>One Sample t-test / BIAS results</h3>
+						<table>
+							<thead>
+								<tr>
+									<th>Participant movement + Ball movement type</th>
+									<th>t-statistic</th>
+									<th>Significance value</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Voluntary + rotation</td>
+									<td>3.07</td>
+									<td><.005*</td>
+								</tr>
+								<tr>
+									<td>Voluntary + axial</td>
+									<td>2.87</td>
+									<td><.005*</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Involuntary  + rotational </td>
+									<td>4.64</td>
+									<td><.005*</td>
+								</tr>
+								<tr>
+									<td>Involuntary + axial </td>
+									<td>4.75</td>
+									<td><.005*</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+						
+				</section>
+
+				<section>
+					
+					
+					<section>
+						<h3>One Sample t-test / SIGMA results</h3>
+						<table>
+							<thead>
+								<tr>
+									<th>Participant movement + Ball movement type</th>
+									<th>t-statistic</th>
+									<th>Significance value</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Voluntary + rotation</td>
+									<td>8.64</td>
+									<td><.005*</td>
+								</tr>
+								<tr>
+									<td>Voluntary + axial</td>
+									<td>9.36</td>
+									<td><.005*</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Involuntary  + rotational </td>
+									<td>5.91</td>
+									<td><.005*</td>
+								</tr>
+								<tr>
+									<td>Involuntary + axial </td>
+									<td>10.40</td>
+									<td><.005*</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+						
+				</section>
+
+				<section>
+					<h2>This means that replication of the past studies was a success!</h2>
+					<p>
+						As the means were higher than 0 and the probability of attaining those means were less than .005 it was highly unlikely this was due to chance.
+					</p>
+				</section>
+
+				<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
+					<h2>HOW EXCITING!</h2>
+				</section>
+				<section>
+					But what about the ANOVA and the correlation?
+				</section>
+				
+					<section>
+						<section>
+							<h2>The ANOVA results... For bias</h2>
+						<ul id="one">
+							<li>No main effect of object movment type (rotation vs axial). F(1, 15) = 0.00, p = .949.</li><br>
+							<li>No interaction between object movement type and participant movement type (voluntary vs involuntary). F(1, 15) = 0.24, p = .632.</li><br>
+							<li>However, significant main effect of participant movement type! F (1, 15) = 11.63, p = .004. See the post-hoc by pressing down.</li>
+						</ul>
+	
+						
+						<img src="images/pic12.jpg" alt="ANOVA_Bias" style="width:70%">
+						
+						</section>
+	
+						<section>
+							<h2>Post hoc test to investigate main effect further</h2>
+							<ul id="one">
+								<li>Voluntary and involuntary  
+									conditions was significantly different when comparing the axial movement condition in both voluntary and involuntary movement, t (29) = -2.55, p = .017. 
+								</li><br>
+								<li>But the same effect could not be found for the rotational condition... t (29) = -1.79, p = .084.</li>
+							</ul>
+							<img src="images/pic14.jpg" alt="ANOVA_Bias" style="width:100%">
+		
+						</section>
+						
+					</section>
+
+					<section>
+							<section>
+								<h2>The ANOVA results... For sigma</h2>
+							<ul id="one">
+								<li>No main effect of object movment type (rotation vs axial). F(1, 15) = 0.99, p = .335.</li><br>
+								<li>No interaction between object movement type and participant movement type (voluntary vs involuntary). F(1, 15) = 0.35, p = .564.</li><br>
+								<li>Again, a significant main effect of participant movement type! F(1, 15) = 6.28, p = .024. Press down to see post-hoc test. </li>
+							</ul>
+		
+							<img src="images/pic13.jpg" alt="ANOVA_Bias" style="width:60%">
+							
+							</section>
+		
+							<section>
+								<h3>Post hoc test to investigate main effect further</h3>
+								<ul id="one">
+									<li>Voluntary and involuntary  
+										conditions was significantly different when comparing the rotational movement condition in both voluntary and involuntary movement conditions, t (29) = -2.55, p = .017. 
+									</li><br>
+									<li>But the same effect could not be found for the axial condition... t (29) = -1.79, p = .084.</li>
+									<img src="images/pic15.jpg" alt="ANOVA_Bias" style="width:100%">
+								</ul>
+			
+							</section>
+							
+					</section>
+
+						<section>
+								<section>
+									<h2>Correlation Results - Voluntary</h2>
+								<ul id="two">
+									<li>A weak positive correlation was found, however...</li>
+									<li>No significant correlation was found in the voluntary 
+										condition between rotational and axial movement, r(14) = .24, p = .372. </li>
+										<li>But what about involuntary correlation? Press down.</li>
+								
+								</ul>
+								<img src="images/pic16.jpg" alt="ANOVA_Bias" style="width:60%">
+								
+								</section>
+			
+								<section>
+									<h3>Correlation Results - Involuntary</h3>
+									<ul id="two">
+										<li>A moderately postive correlation was found in the involuntary condition, but...
+										</li><br>
+										<li>Again, no significant correlation was found between the rotational and axial movements, r(14) = .49, p = .053.</li>
+										
+									</ul>
+									
+								<img src="images/pic17.jpg" alt="ANOVA_Bias" style="width:60%">
+									
+								</section>
+								
+							</section>
+							<section>
+									<h2>What does this all mean?</h2>
+									<ul id="two">
+											<li>The one sample t-tests show a successful replication of both Tcheang and Wexler's past experiments.
+											</li><br>
+											<li>The ANOVA results show that a higher bias and sigma value was obtained in the participant movement type. This is good!</li><br>
+											<li>However, using a post-hoc test this higher value could not be found in both axial and rotational movement together... This is problematic.</li><br>
+											<li>No significant correlation between bias for either object movement type could be found. This was true for both participant movement types.</li>
+										</ul>
+								</section>
+
+								<section>
+										<h2>Why the mixed results?</h2>
+										<ul id="two">
+												<li>Maybe there is a seperate stability mechanism for rotational and axial movement and the lack of significant results show it. 
+												</li><br>
+												<li><em>OR</em> our sample size is too low. We were constrained for time and could only recruit 16 participants. It is recommended that 20 participants should be used for a correlation. </li><br>
+												<li>Participants were seated for the involuntary condition. This is much different than being stood up for the voluntary condition and therefore could have impacted the ANOVA resutls.</li><br>
+											
+											</ul>
+									</section>
+									<section>
+											<h2>Final thoughts</h2>
+											<ul id="two">
+													<li>I believe this project could serve as a good pilot to build future research upon. I was one of the first students to use a VR laboratory at The University of Manchester so gaining the positve results that were collected was a big achievement considering 
+														the new frontiers that were faced. 
+													</li><br>
+													<li> No evidence was obtained to suggest a common stability mechanism. However, we did successfully replicate past research! </li><br>
+													<li> Future studies need to collect a larger sample size. </li><br>
+													<li>A more consistent method needs to be established between the voluntary and involuntary movement conditions. This will lead to more accurate data.</li><br>
+												</ul>
+										</section>
+
+										<section data-background="https://media.giphy.com/media/QAsBwSjx9zVKoGp9nr/giphy.gif">
+												<h2>Thank you for reading!</h2>
+												
+											</section>
+			</div>
+
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				
+				dependencies: [
+
+					{ src: 'plugin/highlight/highlight.js', async: true },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
