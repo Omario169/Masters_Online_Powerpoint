@@ -30,16 +30,18 @@ footer, header, hgroup, main, menu, nav, section {
 
 li {
   float:left;
-  font-size: 70%;
+  font-size: 100%;
+  margin-top: 3%;
 }
 
 #one {
   float:left;
-  font-size: 70%;
+  font-size: 90%;
+ 
 }
 
 p {
-  font-size: 70%;
+  font-size: 90%;
 }
 
 h3 {
@@ -48,4 +50,15 @@ h3 {
 
 #two {
   font-size: 100%;
+}
+
+html {
+  overflow: scroll;
+    overflow-x: hidden;
+}
+
+.scrollable {
+  bottom: 0px;
+  overflow-y: auto  !important;
+  overflow-x: hidden !important;
 }
